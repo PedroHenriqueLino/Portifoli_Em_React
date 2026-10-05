@@ -1,19 +1,20 @@
 .home {
-    background-image: url('Firefly.png');
+    background-image: url('/Firefly.png');
     background-size: cover;
     background-position: center;
+    background-color: rebeccapurple;
 }
 
 @media (max-width: 884px) {
     .home {
-        background-image: url('BackgroundChatGpt.png');
+        background-image: url('/BackgroundChatGpt.png');
         background-size: cover;
     }
 }
 
 @media (max-width: 440px) {
     .home {
-        background-image: url('Firefly.png');
+        background-image: url('/Firefly.png');
         background-size: cover;
         background-position: -10% center;
     }
