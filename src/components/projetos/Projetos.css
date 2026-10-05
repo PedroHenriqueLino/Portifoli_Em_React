@@ -278,6 +278,10 @@
         width: 30px;
         height: 30px;
     }
+
+    .aviso-produtos {
+        left: 0px;
+    }
 }
 
 /*Responsivo a cima*/
