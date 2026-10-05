@@ -266,14 +266,17 @@
 @media (max-width: 440px) {
     .projetos-title {
         margin-left: 20px;
+        font-size: .8rem;
     }
 
     .projetos-title svg {
         margin-left: 5px;
     }
 
-    .aviso-produtos {
-        left: 0px;
+    .aviso-produtos svg {
+        left: 5px;
+        width: 30px;
+        height: 30px;
     }
 }
 
