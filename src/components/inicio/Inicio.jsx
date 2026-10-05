@@ -27,8 +27,14 @@ const Inicio = () => {
 
                 <div className="left-btn">
                     <button id="ver-btn">
-                        <IconDownload />
-                        Baixar currículo
+                        <a
+                            id="ver-btn"
+                            href="/vaga-match-curriculo.pdf"
+                            download="vaga-match-curriculo.pdf"
+                        >
+                            <IconDownload />
+                            Baixar currículo
+                        </a>
                     </button>
 
                     <button
