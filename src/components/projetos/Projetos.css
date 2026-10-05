@@ -1,0 +1,280 @@
+/* ========================================
+   PROJETOS
+======================================== */
+
+.projetos-content {
+    min-height: 100px;
+    background: #050616;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 70px;
+}
+
+/*Projetos Titulo */
+
+.projetos-title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    position: relative;
+    z-index: 10;
+}
+
+.projetos-title>*:first-child {
+    width: 100%;
+}
+
+.projetos-title h2 {
+    color: #875fec;
+}
+
+.projetos-title h1 span {
+    color: transparent;
+    background: linear-gradient(to right,
+            #6b7eea,
+            #575aaa,
+            #856bf5,
+            #794ce5);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+/*Aviso dos Produtos */
+
+.aviso-produtos {
+    display: none;
+    position: absolute;
+    left: 300px;
+    width: 300px;
+    padding: 15px;
+    background: #171a21;
+    border: 1px solid #facc15;
+    border-radius: 8px;
+    color: #d1d5db;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    z-index: 20;
+}
+
+.projetos-title:hover .aviso-produtos {
+    display: flex;
+}
+
+.aviso-produtos.mostrar {
+    display: flex;
+}
+
+/*Ícone do Aviso */
+
+.projetos-title svg {
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #facc15;
+    cursor: pointer;
+    animation: aviso-pulo 1.5s infinite;
+}
+
+@keyframes aviso-pulo {
+
+    0%,
+    70%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-8px);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-5px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+/*Projetos Titulo a cima*/
+
+/*Lista de Projetos */
+
+.projects-list {
+    max-width: 1700px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/*Cards de Projetos */
+
+.projetos-cards {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 2px solid #10142c;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 5;
+}
+
+.projetos-cards:hover {
+    transform: translateY(-8px);
+    border-color: #6746b3;
+    box-shadow: 0 10px 30px rgba(103, 70, 179, 0.2);
+}
+
+.projetos-cards .card-img {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.projetos-info h4 {
+    margin: 10px 0px 10px 0px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.projetos-tecnologia {
+    display: flex;
+    gap: 10px;
+}
+
+.projetos-tecnologia span {
+    color: #9ca3af;
+    background: #131a42;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.projetos-info p {
+    margin: 10px 0px 10px 0px;
+    color: #9ca3af;
+}
+
+.projetos-info button {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px 5px 0px;
+    gap: 10px;
+    background: transparent;
+    color: #6746b3;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*Cards de Projetos a cima*/
+
+/*Animação - Título */
+
+.projetos-entrada {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.projetos-visible .projetos-entrada {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Animação dos Cards */
+
+.projeto-card-1,
+.projeto-card-2,
+.projeto-card-3,
+.projeto-card-4 {
+    opacity: 0;
+    animation: projetoEntrada 0.6s ease forwards;
+}
+
+.projeto-card-1 {
+    animation-delay: 0.15s;
+}
+
+.projeto-card-2 {
+    animation-delay: 0.3s;
+}
+
+.projeto-card-3 {
+    animation-delay: 0.45s;
+}
+
+.projeto-card-4 {
+    animation-delay: 0.6s;
+}
+
+@keyframes projetoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(50px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/*Animação dos Cards a cima*/
+
+/*Acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .projetos-entrada,
+    .projeto-card-1,
+    .projeto-card-2,
+    .projeto-card-3,
+    .projeto-card-4 {
+        opacity: 1;
+        transform: none;
+        animation: none;
+    }
+}
+
+/*Acessibilidade a cima*/
+
+/*Responsivo */
+
+@media (max-width: 884px) {
+    .projetos-title {
+        margin-left: 50px;
+    }
+
+    .projetos-title svg {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 440px) {
+    .projetos-title {
+        margin-left: 20px;
+    }
+
+    .projetos-title svg {
+        margin-left: 5px;
+    }
+
+    .aviso-produtos {
+        left: 0px;
+    }
+}
+
+/*Responsivo a cima*/

@@ -1,0 +1,517 @@
+.sobre-content {
+    width: 100%;
+    height: 500px;
+    background-color: #06081a;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+    max-width: 1750px;
+    height: 500px;
+    padding: 1px;
+    color: white;
+}
+
+/*sobre-info*/
+.sobre-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 50%;
+}
+
+.sobre-info h2 {
+    color: #6c40c8;
+}
+
+.sobre-info h1 {
+    font-size: 3rem;
+}
+
+.sobre-info h1 span {
+    color: #6c40c8;
+}
+
+.sobre-info p {
+    margin-top: 10px;
+    color: #9ca3af;
+
+}
+
+.sobre-info button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+
+    background: linear-gradient(90deg,
+            rgba(185, 138, 255, 0.08),
+            rgba(185, 138, 255, 0.3),
+            rgba(185, 138, 255, 0.08));
+
+    background-size: 200% 100%;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 2px solid #b98aff;
+
+    transition: 0.3s ease;
+}
+
+.sobre-info button:hover {
+    animation: gradientMove 2s ease infinite;
+}
+
+
+/*sobre-info a cima*/
+
+/*sobre-habilidades*/
+.sobre-habilidades {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    flex: 60%;
+
+}
+
+.habilidade-box {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    background: #0b0d24f7;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.habilidade-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-icon {
+    padding: 20px 25px;
+    background: #171541;
+    border-radius: 50%;
+    border: 1px solid rgba(153, 138, 204, 0.4);
+}
+
+.info-icon svg {
+    width: 40px;
+    height: 40px;
+    color: #998acc;
+
+    filter: drop-shadow(0 0 8px rgba(153, 138, 204, 0.7));
+}
+
+.info-text p {
+    margin-top: 10px;
+    color: #9ca3af;
+}
+
+/*sobre-habilidades a cima*/
+
+/* ========================================
+   RESPONSIVO - 884px
+======================================== */
+
+@media (max-width: 884px) {
+
+    .sobre-content {
+        height: auto;
+        min-height: 600px;
+        padding: 50px 30px;
+        box-sizing: border-box;
+    }
+
+    .about-container {
+        max-width: 100%;
+        height: auto;
+        gap: 30px;
+    }
+
+
+    /* Sobre mim */
+
+    .sobre-info {
+        flex: 45%;
+    }
+
+    .sobre-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .sobre-info h1 {
+        font-size: 2.3rem;
+    }
+
+    .sobre-info p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+
+    /* Botão */
+
+    .sobre-info button {
+        font-size: 1rem;
+        padding: 9px 20px;
+    }
+
+
+    /* Habilidades */
+
+    .sobre-habilidades {
+        flex: 55%;
+        padding-left: 0;
+    }
+
+    .habilidade-box {
+        height: auto;
+        padding: 25px;
+        gap: 20px;
+    }
+
+
+    /* Cards */
+
+    .habilidade-info {
+        gap: 10px;
+    }
+
+
+    /* Ícones */
+
+    .info-icon {
+        padding: 15px 18px;
+    }
+
+    .info-icon svg {
+        width: 32px;
+        height: 32px;
+    }
+
+
+    /* Textos */
+
+    .info-text h3 {
+        font-size: 1rem;
+    }
+
+    .info-text p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sobre-content {
+        height: auto;
+        min-height: 600px;
+        padding: 40px 25px;
+        box-sizing: border-box;
+    }
+
+    .about-container {
+        max-width: 100%;
+        height: auto;
+        gap: 25px;
+    }
+
+    /* Sobre mim */
+    .sobre-info {
+        flex: 45%;
+    }
+
+    .sobre-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .sobre-info h1 {
+        font-size: 2rem;
+    }
+
+    .sobre-info p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    /* Botão */
+    .sobre-info button {
+        font-size: 0.95rem;
+        padding: 9px 18px;
+    }
+
+    /* Habilidades */
+    .sobre-habilidades {
+        flex: 55%;
+        padding-left: 0;
+    }
+
+    .habilidade-box {
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    /* Cards */
+    .habilidade-info {
+        gap: 8px;
+    }
+
+    /* Ícones */
+    .info-icon {
+        padding: 13px 15px;
+    }
+
+    .info-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Textos */
+    .info-text h3 {
+        font-size: 0.95rem;
+    }
+
+    .info-text p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+}
+
+/* ========================================
+   RESPONSIVO - 440px
+======================================== */
+
+@media (max-width: 440px) {
+
+    .sobre-content {
+        min-height: 100vh;
+        height: auto;
+        padding: 60px 20px;
+        box-sizing: border-box;
+    }
+
+
+    /* Container */
+
+    .about-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 50px;
+    }
+
+
+    /* ====================================
+       SOBRE MIM
+    ==================================== */
+
+    .sobre-info {
+        width: 100%;
+        flex: none;
+    }
+
+    .sobre-info h2 {
+        font-size: 1rem;
+    }
+
+    .sobre-info h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .sobre-info p {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+
+    /* Remove os <br> no celular */
+
+    .sobre-info p br {
+        display: none;
+    }
+
+
+    /* Botão */
+
+    .sobre-info button {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+
+
+    /* ====================================
+       HABILIDADES
+    ==================================== */
+
+    .sobre-habilidades {
+        width: 100%;
+        flex: none;
+        padding-left: 0;
+    }
+
+
+    .habilidade-box {
+        width: 100%;
+        height: auto;
+        padding: 25px 20px;
+        box-sizing: border-box;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        gap: 25px;
+    }
+
+
+    /* ====================================
+       CARDS
+    ==================================== */
+
+    .habilidade-info {
+        width: 100%;
+        gap: 12px;
+    }
+
+
+    /* Ícones */
+
+    .info-icon {
+        flex-shrink: 0;
+        padding: 13px 15px;
+    }
+
+    .info-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    /* Textos */
+
+    .info-text {
+        min-width: 0;
+    }
+
+    .info-text h3 {
+        font-size: 0.95rem;
+    }
+
+    .info-text p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+
+    /* Remove os <br> dos cards */
+
+    .info-text p br {
+        display: none;
+    }
+
+}
+
+/* ========================================
+   ANIMAÇÕES
+======================================== */
+
+/* Estado inicial */
+.sobre-info {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.sobre-habilidades {
+    opacity: 0;
+    transform: translateX(60px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Estado visível */
+.sobre-visible .sobre-info,
+.sobre-visible .sobre-habilidades {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* ========================================
+   ANIMAÇÃO DAS HABILIDADES
+======================================== */
+
+.habilidade-info {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.sobre-visible .habilidade-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito cascata */
+.sobre-visible .habilidade-info:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.sobre-visible .habilidade-info:nth-child(2) {
+    transition-delay: 0.35s;
+}
+
+.sobre-visible .habilidade-info:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.sobre-visible .habilidade-info:nth-child(4) {
+    transition-delay: 0.65s;
+}
+
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sobre-info,
+    .sobre-habilidades,
+    .habilidade-info {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

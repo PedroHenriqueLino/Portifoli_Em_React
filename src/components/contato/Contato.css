@@ -1,0 +1,461 @@
+.contato-content {
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 350px;
+
+    background-color: #06081a;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding-top: 50px;
+
+    color: white;
+}
+
+
+.contato-box {
+
+    display: flex;
+
+    width: 100%;
+
+    width: 1350px;
+
+    height: 100%;
+}
+
+.contato-box h3 {
+
+    color: #875fec;
+}
+
+
+/* ========================================
+   SKILLS
+======================================== */
+
+.skills {
+
+    flex: 50%;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skills h2 span {
+
+    color: transparent;
+
+    background: linear-gradient(to right,
+            #6b7eea,
+            #575aaa,
+            #856bf5,
+            #794ce5);
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+}
+
+.skills-tecnologias {
+
+    margin-top: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skills-tecnologias .tecnologia {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 10px;
+
+    width: 140px;
+
+    background: #0c0f22;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+.skills-tecnologias .tecnologia img {
+
+    transition: transform 0.3s ease;
+}
+
+.skills-tecnologias .tecnologia:hover img {
+
+    transform: scale(1.15);
+}
+
+
+/* ========================================
+   CONTATO
+======================================== */
+
+.contato {
+
+    flex: 50%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 30px;
+}
+
+.contato p {
+
+    margin: 3px 0px 10px 0px;
+
+    color: #9ca3af;
+}
+
+.contato button {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 10px 30px;
+
+    margin-top: 20px;
+
+    font-size: 1rem;
+
+    width: fit-content;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    border: none;
+
+    color: white;
+
+    background: linear-gradient(to right,
+            #b98aff,
+            #a879ff,
+            #9f6fff,
+            #b98aff);
+
+    background-size: 300% 100%;
+
+    animation: gradientMove 3s ease infinite;
+}
+
+.contato button a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+.contato .left-social {
+
+    margin-top: 10px;
+
+    padding: 0px;
+
+    display: flex;
+
+    gap: 5px;
+}
+
+.contato .left-social svg {
+
+    width: 30px;
+
+    height: 30px;
+
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+
+/* ========================================
+   ANIMAÇÃO DA SEÇÃO
+======================================== */
+
+.skills {
+
+    opacity: 0;
+
+    transform: translateX(-60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.contato {
+
+    opacity: 0;
+
+    transform: translateX(60px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* ========================================
+   SEÇÃO VISÍVEL
+======================================== */
+
+.contato-visible .skills {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+.contato-visible .contato {
+
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* ========================================
+   ANIMAÇÃO DAS TECNOLOGIAS
+======================================== */
+
+.tecnologia {
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.5s ease,
+        transform 0.5s ease;
+}
+
+
+/* Tecnologia 1 */
+
+.contato-visible .tecnologia:nth-child(1) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.2s;
+}
+
+
+/* Tecnologia 2 */
+
+.contato-visible .tecnologia:nth-child(2) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.3s;
+}
+
+
+/* Tecnologia 3 */
+
+.contato-visible .tecnologia:nth-child(3) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.4s;
+}
+
+
+/* Tecnologia 4 */
+
+.contato-visible .tecnologia:nth-child(4) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.5s;
+}
+
+
+/* Tecnologia 5 */
+
+.contato-visible .tecnologia:nth-child(5) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.6s;
+}
+
+
+/* Tecnologia 6 */
+
+.contato-visible .tecnologia:nth-child(6) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.7s;
+}
+
+
+/* Tecnologia 7 */
+
+.contato-visible .tecnologia:nth-child(7) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.8s;
+}
+
+
+/* Tecnologia 8 */
+
+.contato-visible .tecnologia:nth-child(8) {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 0.9s;
+}
+
+
+/* ========================================
+   RESPONSIVO - 884px
+======================================== */
+
+@media (max-width: 884px) {
+
+    .contato-content {
+
+        height: auto;
+
+        min-height: 700px;
+
+        padding: 40px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .contato-box {
+
+        width: 100%;
+
+        height: auto;
+
+        margin-left: 0;
+
+        padding: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* SKILLS */
+
+    .skills {
+
+        width: 100%;
+
+        flex: none;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        padding-bottom: 30px;
+    }
+
+    .skills-tecnologias {
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    .skills-tecnologias .tecnologia {
+
+        width: 120px;
+
+        padding: 10px;
+    }
+
+
+    /* CONTATO */
+
+    .contato {
+
+        width: 100%;
+
+        flex: none;
+
+        margin-left: 0;
+
+        align-items: center;
+    }
+
+    .contato p {
+
+        max-width: 600px;
+
+        text-align: center;
+    }
+}
+
+
+/* ========================================
+   ACESSIBILIDADE
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skills,
+    .contato,
+    .tecnologia {
+
+        opacity: 1;
+
+        transform: none;
+
+        transition: none;
+    }
+}
