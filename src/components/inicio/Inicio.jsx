@@ -29,8 +29,8 @@ const Inicio = () => {
                     <button id="ver-btn">
                         <a
                             id="ver-btn"
-                            href="/vaga-match-curriculo.pdf"
-                            download="vaga-match-curriculo.pdf"
+                            href="/PedroLino-curriculo.pdf"
+                            download="PedroLino-curriculo.pdf"
                         >
                             <IconDownload />
                             Baixar currículo
