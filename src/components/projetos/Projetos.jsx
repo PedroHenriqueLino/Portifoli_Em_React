@@ -249,9 +249,50 @@ const Projetos = () => {
 
                 </div>
 
+                {/* Clima */}
+                <div className="projetos-cards projeto-card-4">
+                    <div
+                        className="card-img"
+                        style={{
+                            backgroundImage: "url('/project-img/Clima.png')"
+                        }}
+                    >
+                    </div>
+
+                    <div className="projetos-info">
+
+                        <h4>ClimaSky</h4>
+
+                        <div className="projetos-tecnologia">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>Recharts</span>
+                        </div>
+
+                        <p>
+                            Previsão do tempo com API Open-Meteo,
+                            gráficos interativos e temperaturas
+                            para os próximos dias.
+                        </p>
+
+                        <button
+                            onClick={() =>
+                                window.open(
+                                    "https://clima-em-react.vercel.app/",
+                                    "_blank"
+                                )
+                            }
+                        >
+                            Ver projeto
+                            <IconArrowRight />
+                        </button>
+
+                    </div>
+                </div>
+
             </div>
 
-        </div>
+        </div >
     );
 };
 

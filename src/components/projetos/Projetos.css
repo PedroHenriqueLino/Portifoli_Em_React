@@ -15,7 +15,7 @@
 .projetos-title {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 200px;
+    margin-left: 0px;
     position: relative;
     z-index: 10;
 }
